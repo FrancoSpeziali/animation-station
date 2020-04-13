@@ -1,10 +1,30 @@
-# Project Name
+# Animation Station
 
-## Installation
+Bring these graphics to life with CSS!
 
-Run `npm install`
+## What you will be doing
 
-## Usage
+This project will allow you to practise using:
+
+> - CSS z-index
+> - CSS Transform
+> - CSS @keyframes
+> - CSS Background position
+> - CSS Translate function
+> - CSS Rotate function
+
+This project assumes you've already had experience with:
+
+> - Styling with CSS and SCSS
+> - HTML
+
+## Getting started
+
+### Installation
+
+In your terminal, run `npm install`
+
+### Usage
 
 In the terminal, running the following command
 
@@ -15,50 +35,105 @@ It will:
 1) Run the SASS file watcher 
 2) Run the npm live-server
 
-## Advanced Usage
+## Research
 
-- To run the live server, run `npm run serve`
-- To run the SASS file watcher run `npm run scss-watch`
-- For a one-time SASS/SCSS build, run `npm run scss-compile`
-- For a one-time SASS linter check, run `npm run sass-lint`
+If you feel you need a refresher, you may find the following links useful.
 
-## Preparing for your assignments
+##### CSS Transform
+> [CSS Transform (en)](https://developer.mozilla.org/en-US/docs/Web/CSS/transform)
+>
+> [CSS Transform (de)](https://developer.mozilla.org/de/docs/Web/CSS/transform)
 
-**Important!** Before working on these assignments, please make sure to create
-a new branch with the name "solution" in the terminal;
+##### Using CSS Animations
+> [Using CSS animations (en)](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations)
+> 
+> [CSS Animationen nutzen (de)](https://developer.mozilla.org/de/docs/Web/CSS/CSS_Animations/Using_CSS_animations)
 
-`git checkout -b solution`
+## Tasks
 
-When you have finished making your changes, use the following command to mark all changed files
-to be added to the next commit;
+## Task 1 - Rainy days
 
-`git add .`
+_Preview_
 
-And then commit as follows;
+![Rainy days](./totoro.gif)
 
-`git commit -m "Your message"`
+> Research:
+> 
+> [CSS Background position (en)](https://developer.mozilla.org/en-US/docs/Web/CSS/background-position)
+> 
+> [CSS Background position (en)](https://developer.mozilla.org/de/docs/Web/CSS/background-position)
 
-Replace the text _Your message_ with something a short summary of the changes you've made
+1. Using the `images/raindrops.jpg` background image, set a repeating background for the `<section>` `'rainy-days'`
 
-It's good practise to separate your code changes into multiple commits,
-for example - if you're building a website, you might want to have 1 commit for your header code,
-one for your navigation code, etc.
+2. Animate the background to move from top to bottom using CSS3 features `@keyframes` and `animation`
 
-## Submitting your assignments
+3. Create a new HTML element inside the `<section>` tag, then using CSS3 set the `images/totoro.gif` image to move
+from right to left
 
-Once you've finished your changes and you are ready to submit your work, you can push the changes
-to the remote server via the following commands;
+> **Hint**: You can animate the property `background-position` to move the background image.
 
-If you've already pushed before, you can simply use:
+## Task 2 - Retro platformer
 
-`git push`
+1. Set the background colour for the `<section>` tag `'retro-platformer'` to something blue
 
-If however you get an error, telling you the remote branch for "solution" does not exist, use the
-following command:
+2. Create an HTML element inside the `<section>` tag, then using CSS3 set the 'bullet-bill' image to move
+from right to left
 
-`git push --set-upstream origin solution`
+3. Create a new HTML element inside the `<section>` tag, then set the `images/mario.png` image as the background
 
-Once this is done, create a **Pull Request** from the `solution` branch to the `master` branch
-via the GitHub interface.
+4. Animate the mario character to run, jump, land and continue running
 
-## Assignments
+## Task 3 - Space Journey
+
+> Research:
+> 
+> [CSS Rotate function (en)](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotate)
+
+1. Using the `images/space.jpg` background image, set a static background for the `<section>` `'space-journey'`.
+
+2. Create a new HTML element inside the `<section>` tag using position absolute, set the `images/spaceship.png` image as
+the background
+
+3. Animate the spaceship position:
+    - from the top left of the screen to the top right of the screen
+    - from the top right of the screen to the bottom right of the screen
+    - from the bottom right of the screen to the bottom left of the screen
+    - from the bottom left of the screen to the top left of the screen
+    - ensure the animation performs in one continuous loop
+
+4. Using the property `transform` with the `rotate()` function, animate the spaceship rotation to coincide
+with its position on the screen
+
+## Task 4 - Digital Traffic
+
+_Preview_
+
+![Digital traffic](./digital-traffic.gif)
+
+> Research:
+>
+> [CSS Translate function (en)](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translate)
+
+> [CSS z-index (en)](https://developer.mozilla.org/en-US/docs/Web/CSS/z-index)
+>
+> [CSS z-index (en)](https://developer.mozilla.org/de/docs/Web/CSS/z-index)
+
+1. Using the `images/isometric.png` background image, set a repeating background for the `<section>` `'digital-traffic'`
+
+2. Create a new HTML elements inside the `<section>` tag, for each of the following graphics:
+   - `images/bus.png`
+   - `images/lorry.png`
+   - `images/tractor.png`
+   - `images/truck.png`
+
+3. Using `position: absolute`, place the elements next to each other, to imitate a road of 2 lanes
+
+4. Animate each vehicle to all move alongside each other at the same speed (so they don't crash!)
+   and that they follow the isometric lines accurately
+
+> **Hint**: You will need to move them horizontally and vertically, but you may have to use some trial and error
+to determine the correct values
+
+> **Hint**: You only need to animate the `transform` property with the `translate(x, y)` function
+
+> **Hint**: Use the `z-index` property to give the illusion that some vehicles are behind or in front of each other
